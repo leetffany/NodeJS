@@ -4,13 +4,16 @@
   "description": "Devcamper backend API",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "NODE_ENV=production node server",
+    "dev": "nodemon server"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^14.3.2",
-    "express": "^4.17.2"
+    "express": "^4.17.2",
+    "mongoose": "^6.2.8",
+    "morgan": "^1.10.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
